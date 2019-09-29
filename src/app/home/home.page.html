@@ -9,9 +9,10 @@
 <ion-content>
   <div class="ion-padding" >
 
-    <ion-list class="list-group">
+    <ion-list class="list-group" *ngFor='let agen of Agenda; let i = index'>
 
-     <li *ngFor='let agen of Agenda'>{{agen.campus}}</li>
+     <li>{{i+1}}: {{agen.espacio}}</li>
+     <li>{{agen.autores[0].nombres}}</li>
 
     </ion-list>
    

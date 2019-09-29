@@ -10,7 +10,8 @@ export class HomePage implements OnInit {
 
 
 
-  Agenda: any;
+  Agenda: any = [];
+
 
   constructor(private servicio: ServicioService) { }
 
@@ -19,10 +20,8 @@ export class HomePage implements OnInit {
     this.servicio.getAgenda()
       .subscribe((res) => {
         this.Agenda = res.agenda;
+        console.log(this.Agenda);
+
       });
-
   }
-
 }
-
-
