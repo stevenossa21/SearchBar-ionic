@@ -12,6 +12,6 @@ export class ServicioService {
   constructor(private http: HttpClient) { }
 
   getAgenda() {
-    return this.http.get<any>(this.uri);
+    return this.http.get<any[]>(this.uri);
   }
 }

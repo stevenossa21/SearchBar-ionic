@@ -1,18 +1,21 @@
-<ion-header>
+<ion-header no-border>
   <ion-toolbar>
     <ion-title>
       Rest API
     </ion-title>
   </ion-toolbar>
+<ion-searchbar animated (ionChange)="buscar( $event )"></ion-searchbar>
+
 </ion-header>
 
 <ion-content>
   <div class="ion-padding" >
 
-    <ion-list class="list-group" *ngFor='let agen of Agenda; let i = index'>
+    <ion-list class="list-group" *ngFor='let agen of Agenda.agenda; let i = index'>
 
-     <li>{{i+1}}: {{agen.espacio}}</li>
-     <li>{{agen.autores[0].nombres}}</li>
+      <ion-item>{{i+1}}: {{agen.espacio}}</ion-item>
+      <ion-item>{{agen.autores[0].nombres}}</ion-item>
+
 
     </ion-list>
    

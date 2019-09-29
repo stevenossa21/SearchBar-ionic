@@ -19,9 +19,14 @@ export class HomePage implements OnInit {
 
     this.servicio.getAgenda()
       .subscribe((res) => {
-        this.Agenda = res.agenda;
+        this.Agenda = res;
         console.log(this.Agenda);
 
       });
+
+  }
+
+  buscar(event) {
+    console.log(event);
   }
 }
