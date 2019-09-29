@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { HomePage } from './home.page';
+import { PipesModule } from '../pipes/pipes.module';
 
 @NgModule({
   imports: [
@@ -13,6 +14,7 @@ import { HomePage } from './home.page';
     FormsModule,
     IonicModule,
     HttpClientModule,
+    PipesModule,
     RouterModule.forChild([
       {
         path: '',

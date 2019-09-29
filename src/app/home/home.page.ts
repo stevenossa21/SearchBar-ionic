@@ -11,7 +11,7 @@ export class HomePage implements OnInit {
 
 
   Agenda: any = [];
-
+  textoBuscar = '';
 
   constructor(private servicio: ServicioService) { }
 
@@ -27,6 +27,6 @@ export class HomePage implements OnInit {
   }
 
   buscar(event) {
-    console.log(event);
+    this.textoBuscar = event.detail.value;
   }
 }
