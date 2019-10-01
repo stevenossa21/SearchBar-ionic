@@ -3,6 +3,15 @@
     <ion-title>
       byStevenOssa
     </ion-title>
+
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="page1">
+          <ion-icon name="flash"></ion-icon>
+          <ion-label>Tab One</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
   </ion-toolbar>
   <ion-searchbar color="danger" placeholder="Buscar" (ionChange)="buscar( $event )"></ion-searchbar>
 

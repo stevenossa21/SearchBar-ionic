@@ -8,6 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomePage } from './home.page';
 import { PipesModule } from '../pipes/pipes.module';
 
+
+
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -19,7 +23,7 @@ import { PipesModule } from '../pipes/pipes.module';
       {
         path: '',
         component: HomePage
-      }
+      },
     ])
   ],
   declarations: [HomePage]

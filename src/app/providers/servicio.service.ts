@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ServicioService {
 
-  uri = 'http://www.mocky.io/v2/5d8981933000006400b9a155';
+  uri = 'https://www.mocky.io/v2/5d8981933000006400b9a155';
 
   constructor(private http: HttpClient) { }
 
